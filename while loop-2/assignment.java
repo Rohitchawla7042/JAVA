@@ -49,7 +49,28 @@ int n = scn.nextInt();
         else if(debit_amount > final_balance){
             System.out.println("Insufficient Funds"); 
         }
-        
+        Q3 Mr. Q has a diary in which he has written a lot of numbers. He is confused about the number of digits in every number he has written. Mr. Q will provide the different numbers written in the diary and then you have to write a code to find the number of digits in every number he has written.
+
+Note: Total different Numbers are T and for every number (let's say N) you need to find the total number of digits.
+		
+		int T = scn.nextInt(); 
+       while ( T > 0){
+           int N = scn.nextInt(); 
+           int count = 0 ; 
+           
+           if( N == 0){
+               System.out.println(1);
+           }
+           else{
+               while(N > 0){
+                   count++ ; 
+                   N = N / 10 ;
+               }
+               System.out.println(count);
+           }
+           T-- ; 
+       }
+          
         Q 5 
         
         Given two numbers A & B, print all the numbers from A to B in a single line.
