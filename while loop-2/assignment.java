@@ -70,7 +70,23 @@ Note: Total different Numbers are T and for every number (let's say N) you need 
            }
            T-- ; 
        }
-          
+          Q4 
+		You have a number N, you have to write a code to find odd digit sum and even digit sum from given number and print it.
+		int rem ; 
+         int odd = 0 ; 
+         int even = 0 ; 
+         while ( n > 0){
+             rem = n % 10 ; 
+             n = n / 10 ; 
+             if(rem % 2 == 0){
+                 even = even + rem; 
+             }
+             else
+             odd = odd + rem ; 
+         }
+         System.out.println("Sum of Odd Digit : " +odd); 
+         System.out.println("Sum of Even Digit : " +even); 
+							  
         Q 5 
         
         Given two numbers A & B, print all the numbers from A to B in a single line.
