@@ -28,6 +28,30 @@ public class Main {
 }
 
 Q2 
+You are given an integer N you need to print all the Armstrong Numbers between 1 to N. (N inclusive).
+ int m ; 
+         int rem ; 
+         int n = scn.nextInt(); 
+         int i = 1; 
+         while(i <= n){
+             m = i ; 
+             int sum = 0 ; 
+             while(m > 0){
+                 rem = m % 10 ; 
+                 sum += (rem * rem * rem); 
+                 m = m / 10 ;    
+             }
+             if(sum == i){
+                 System.out.println(sum);
+             }
+             i++ ; 
+         }
+                                                          
+                                                          
+  Q3
+  
+  
+         
 
                                                           
                                                           
