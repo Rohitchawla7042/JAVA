@@ -89,7 +89,19 @@ You are given an integer A, you need to find and return the sum of all the even 
 
 Even numbers are those numbers that are divisible by 2.
 
+public class Solution {
+    public int solve(int A){
+        int sum = 0 ; 
+        for(int i = 2; i <= A ; i++){
+            if(i %2 == 0){
+                sum = sum+ i ; 
+            }
+            // return sum ; 
 
+        }
+         return sum ; 
+    }
+}
   
   Q5
   
