@@ -61,6 +61,42 @@ For each given integer A, you have to tell whether it is a perfect number or not
 
 A perfect number is a positive integer which is equal to the sum of its proper positive divisors (excluding the number itself). A positive proper divisor divides a number without leaving any remainder.
   
+  
+  import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) 
+    {
+        Scanner scn = new Scanner(System.in); 
+        int T = scn.nextInt(); 
+int num = 0 ; 
+// int sum = 0 ; 
+while (T > 0)
+{
+    int sum = 0 ; 
+    int n = scn.nextInt(); 
+    for (int i = 1 ; i < n ; i++)
+    {
+        if(n % i == 0)
+        {
+            sum = sum+i ; 
+        }
+        // sum = sum + num ; 
+    }
+    if(sum == n){
+        System.out.println("YES");
+    }
+    else{
+        
+        System.out.println("NO");
+    }
+    T-- ; 
+}
+// T-- ; 
+
+    }
+}
   Q4
   
   You are given a positive integer A as input. You have to print the sum of all odd numbers in the range [1, A].
