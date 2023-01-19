@@ -181,4 +181,17 @@ Q6
 You are given two matrices A & B of same size, you have to return another matrix which is the sum of A and B.
 
 
+public class Solution {
+    public int[][] solve(int[][] A, int[][] B) {
+        int sum[][] = new int[A.length][A[0].length]; 
+        for(int i = 0 ; i < A.length ; i++){
+            // sum[i][j] = 0 ; 
+            // int sum[][] = new int[A.length][A[i].length]; 
+            for(int j = 0 ; j < A[0].length ; j++){
+                sum[i][j] = A[i][j] + B[i][j]; 
+            }
+        }
+        return sum ; 
+    }
+}
 
