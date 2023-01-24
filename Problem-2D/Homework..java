@@ -5,6 +5,27 @@ You are given a matrix A, you have to return an array containing sum of each row
 
 NOTE: If the matrix given is of size (N x M), then the array you return would be of size (N + M), where first N elements contain the sum of each N rows, and the next M elements contain the sum of each M columns.
 
+public class Solution {
+    public ArrayList<Integer> solve(ArrayList<ArrayList<Integer>> A) {
+        ArrayList<Integer> ans = new ArrayList<>(); 
+        // column wise addition 
+        for(int i = 0 ; i < A.size(); i++){
+            int sum = 0; 
+            for(int j = 0 ; j < A.get(0).size(); j++){
+                sum+= A.get(i).get(j); 
+            }
+            ans.add(sum); 
+        }
+        for(int j = 0 ; j < A.get(0).size(); j++){
+            int sum = 0 ; 
+            for(int i = 0 ; i < A.size(); i++){
+                sum+= A.get(i).get(j); 
+            }
+            ans.add(sum); 
+        }
+        return ans ; 
+    }
+}
 
 
 
