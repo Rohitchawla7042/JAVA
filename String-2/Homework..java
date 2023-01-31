@@ -41,6 +41,21 @@ For E.g.: if string is azd then it will be updated as a1z26d4 since index of a i
 
 You have to tell how the string will look like afterwards,
 
+public class Solution {
+    public String solve(String A) {
+        String New = ""; 
+        for(int i = 0 ; i < A.length(); i++)
+        {
+            char ch = A.charAt(i); 
+            int index = ch - 96 ; 
+            New = New+ch+index ; 
+            //  System.out.println(ans); 
+
+        }
+        // System.out.println(New); 
+        return New ; 
+    }
+}
 
 
 
