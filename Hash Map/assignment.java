@@ -27,3 +27,24 @@ You are given an array A of N integers. Return the count of elements with frequn
       }
       return count ; 
         
+
+      
+      Q2 
+        You are given an array A of N integers. You will have to return number of distinct elements of the array.
+        
+        import java.util.*; 
+public class Solution 
+{
+    public int solve(int[] A) 
+    {
+      HashSet<Integer> map = new HashSet<>(); 
+      for( int i = 0 ; i < A.length ; i++ )  
+      {
+        map.add(A[i]) ; 
+      }
+      return map.size(); 
+      
+    }
+}
+      
+      
